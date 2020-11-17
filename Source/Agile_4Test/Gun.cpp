@@ -50,7 +50,7 @@ void AGun::PullTrigger()
 	FHitResult Hit;
 	bool bSuccess = GunTrace(Hit, ShotDirection);
 	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.Location, ShotDirection.Rotation());
-	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location, ImpactVolume);
 
 	AActor* HitActor = Hit.GetActor();
 
