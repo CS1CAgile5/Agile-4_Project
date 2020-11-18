@@ -50,13 +50,24 @@ private:
 	UPROPERTY (EditDefaultsOnly)
 	TSubclassOf<AGun> GunClass;
 
+	UPROPERTY (EditDefaultsOnly)
+	TArray<TSubclassOf<AGun>> Weapons;
+
+	int GunIndex;
+
+	AGun* Rifle;
+	AGun* Launcher;
+
 	UPROPERTY()
-	AGun* Gun;
+	AGun* ActiveGun;
 
 	UPROPERTY(EditDefaultsOnly)
 	float MaxHealth = 100.f;
 
 	UPROPERTY(VisibleAnywhere)
 	float Health;
+
+	void SetRifle();
+	void SetLauncher();
 
 };

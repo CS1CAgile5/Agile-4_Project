@@ -34,6 +34,13 @@ void AGun::Tick(float DeltaTime)
 
 }
 
+void AGun::IsEnabled(bool IsEnabled)
+{
+	SetActorTickEnabled(IsEnabled);
+	SetActorHiddenInGame(!IsEnabled);
+	SetActorEnableCollision(IsEnabled);
+}
+
 void AGun::PullTrigger()
 {
 	UE_LOG(LogTemp, Warning, TEXT("You’ve been shot!"));

@@ -46,6 +46,8 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AShooterCharacter::Shoot);
+	PlayerInputComponent->BindAction(TEXT("SwitchToRifle"), EInputEvent::IE_Pressed, this, &AShooterCharacter::SetRifle);
+	PlayerInputComponent->BindAction(TEXT("SwitchToLauncher"), EInputEvent::IE_Pressed, this, &AShooterCharacter::SetLauncher);
 
 	PlayerInputComponent->BindAxis(TEXT("LookUpRate"), this, &AShooterCharacter::LookUpRate);
 	PlayerInputComponent->BindAxis(TEXT("LookRightRate"), this, &AShooterCharacter::LookRightRate);
@@ -74,6 +76,22 @@ void AShooterCharacter::LookRightRate(float AxisValue)
 void AShooterCharacter::Shoot()
 {
 	Gun->PullTrigger();
+}
+
+void AShooterCharacter::SetRifle()
+{
+	Launcher->IsEnabled(false);
+	Rifle->IsEnabled(true);
+	ActiveGun = Rifle;
+	GunIndex = 0;
+}
+
+void AShooterCharacter::SetLauncher()
+{
+	Rifle->IsEnabled(false);
+	Launcher->IsEnabled(true);
+	ActiveGun = Launcher;
+	GunIndex = 1; 
 }
 
 float AShooterCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController *EventInstigator, AActor *DamageCauser)
