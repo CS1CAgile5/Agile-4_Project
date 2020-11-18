@@ -23,10 +23,17 @@ void AShooterCharacter::BeginPlay()
 	Health = MaxHealth;
 
 	//if (!Gun) {return;}
-	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+	Rifle = GetWorld()->SpawnActor<AGun>(Weapons[0]);
 	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
-	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
-	Gun->SetOwner(this);
+	Rifle->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	Rifle->SetOwner(this);
+
+	Launcher = GetWorld()->SpawnActor<AGun>(Weapons[0]);
+	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
+	Launcher->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	Launcher->SetOwner(this);
+
+	SetRifle();
 }
 
 // Called every frame
@@ -75,7 +82,7 @@ void AShooterCharacter::LookRightRate(float AxisValue)
 
 void AShooterCharacter::Shoot()
 {
-	Gun->PullTrigger();
+	ActiveGun->PullTrigger();
 }
 
 void AShooterCharacter::SetRifle()
