@@ -1,0 +1,5 @@
+<map id="UBTTaskNode_Shoot::ExecuteTask" name="UBTTaskNode_Shoot::ExecuteTask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$class_a_shooter_character.html#a7c0432c6e0fbf0a36f8e2404ca100667" title=" " alt="" coords="208,5,348,47"/>
+<area shape="rect" id="node3" href="$class_a_gun.html#a3ec5534a6d05015f9e5c82575f12a4f9" title=" " alt="" coords="396,13,520,39"/>
+</map>

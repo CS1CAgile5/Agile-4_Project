@@ -1,0 +1,4 @@
+<map id="AShooterCharacter::Shoot" name="AShooterCharacter::Shoot">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,145,47"/>
+<area shape="rect" id="node2" href="$class_a_gun.html#a3ec5534a6d05015f9e5c82575f12a4f9" title=" " alt="" coords="193,13,317,39"/>
+</map>

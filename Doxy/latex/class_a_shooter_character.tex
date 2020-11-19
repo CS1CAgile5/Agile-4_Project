@@ -1,0 +1,187 @@
+\hypertarget{class_a_shooter_character}{}\doxysection{A\+Shooter\+Character Class Reference}
+\label{class_a_shooter_character}\index{AShooterCharacter@{AShooterCharacter}}
+
+
+{\ttfamily \#include $<$Shooter\+Character.\+h$>$}
+
+
+
+Inheritance diagram for A\+Shooter\+Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_a_shooter_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+Shooter\+Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_a_shooter_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_shooter_character_a59b265704f3ac2d5647388045cacac78}{A\+Shooter\+Character}} ()
+\item 
+virtual void \mbox{\hyperlink{class_a_shooter_character_a60c1df713ed404996a031debc7868104}{Tick}} (float Delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{class_a_shooter_character_a1e788e0b8ae12f8a3a7d00c829196a1f}{Setup\+Player\+Input\+Component}} (class U\+Input\+Component $\ast$Player\+Input\+Component) override
+\item 
+virtual float \mbox{\hyperlink{class_a_shooter_character_a6ac5ff860dc0a913c39a8a4627030ea6}{Take\+Damage}} (float Damage\+Amount, struct F\+Damage\+Event const \&Damage\+Event, class A\+Controller $\ast$Event\+Instigator, A\+Actor $\ast$Damage\+Causer) override
+\item 
+bool \mbox{\hyperlink{class_a_shooter_character_aaaa57073f0ea14b49d59b0b63de43deb}{Is\+Dead}} () const
+\item 
+void \mbox{\hyperlink{class_a_shooter_character_a7c0432c6e0fbf0a36f8e2404ca100667}{Shoot}} ()
+\item 
+float \mbox{\hyperlink{class_a_shooter_character_a67f75a148913c376a47e4477d0f79cd8}{Get\+Health\+Percent}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_a_shooter_character_a5daf056f4b44d0eaddf6b8546c3748c8}{Begin\+Play}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file Shooter\+Character.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_shooter_character_a59b265704f3ac2d5647388045cacac78}\label{class_a_shooter_character_a59b265704f3ac2d5647388045cacac78}} 
+\index{AShooterCharacter@{AShooterCharacter}!AShooterCharacter@{AShooterCharacter}}
+\index{AShooterCharacter@{AShooterCharacter}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{AShooterCharacter()}{AShooterCharacter()}}
+{\footnotesize\ttfamily A\+Shooter\+Character\+::\+A\+Shooter\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Shooter\+Character.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_shooter_character_a5daf056f4b44d0eaddf6b8546c3748c8}\label{class_a_shooter_character_a5daf056f4b44d0eaddf6b8546c3748c8}} 
+\index{AShooterCharacter@{AShooterCharacter}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void A\+Shooter\+Character\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 19 of file Shooter\+Character.\+cpp.
+
+\mbox{\Hypertarget{class_a_shooter_character_a67f75a148913c376a47e4477d0f79cd8}\label{class_a_shooter_character_a67f75a148913c376a47e4477d0f79cd8}} 
+\index{AShooterCharacter@{AShooterCharacter}!GetHealthPercent@{GetHealthPercent}}
+\index{GetHealthPercent@{GetHealthPercent}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{GetHealthPercent()}{GetHealthPercent()}}
+{\footnotesize\ttfamily float A\+Shooter\+Character\+::\+Get\+Health\+Percent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 130 of file Shooter\+Character.\+cpp.
+
+\mbox{\Hypertarget{class_a_shooter_character_aaaa57073f0ea14b49d59b0b63de43deb}\label{class_a_shooter_character_aaaa57073f0ea14b49d59b0b63de43deb}} 
+\index{AShooterCharacter@{AShooterCharacter}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily bool A\+Shooter\+Character\+::\+Is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 125 of file Shooter\+Character.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_a_shooter_character_aaaa57073f0ea14b49d59b0b63de43deb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_shooter_character_a1e788e0b8ae12f8a3a7d00c829196a1f}\label{class_a_shooter_character_a1e788e0b8ae12f8a3a7d00c829196a1f}} 
+\index{AShooterCharacter@{AShooterCharacter}!SetupPlayerInputComponent@{SetupPlayerInputComponent}}
+\index{SetupPlayerInputComponent@{SetupPlayerInputComponent}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{SetupPlayerInputComponent()}{SetupPlayerInputComponent()}}
+{\footnotesize\ttfamily void A\+Shooter\+Character\+::\+Setup\+Player\+Input\+Component (\begin{DoxyParamCaption}\item[{class U\+Input\+Component $\ast$}]{Player\+Input\+Component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 47 of file Shooter\+Character.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_shooter_character_a1e788e0b8ae12f8a3a7d00c829196a1f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_shooter_character_a7c0432c6e0fbf0a36f8e2404ca100667}\label{class_a_shooter_character_a7c0432c6e0fbf0a36f8e2404ca100667}} 
+\index{AShooterCharacter@{AShooterCharacter}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily void A\+Shooter\+Character\+::\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Shooter\+Character.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_a_shooter_character_a7c0432c6e0fbf0a36f8e2404ca100667_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_shooter_character_a7c0432c6e0fbf0a36f8e2404ca100667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_shooter_character_a6ac5ff860dc0a913c39a8a4627030ea6}\label{class_a_shooter_character_a6ac5ff860dc0a913c39a8a4627030ea6}} 
+\index{AShooterCharacter@{AShooterCharacter}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily float A\+Shooter\+Character\+::\+Take\+Damage (\begin{DoxyParamCaption}\item[{float}]{Damage\+Amount,  }\item[{struct F\+Damage\+Event const \&}]{Damage\+Event,  }\item[{class A\+Controller $\ast$}]{Event\+Instigator,  }\item[{A\+Actor $\ast$}]{Damage\+Causer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 104 of file Shooter\+Character.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_shooter_character_a6ac5ff860dc0a913c39a8a4627030ea6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_a_shooter_character_a60c1df713ed404996a031debc7868104}\label{class_a_shooter_character_a60c1df713ed404996a031debc7868104}} 
+\index{AShooterCharacter@{AShooterCharacter}!Tick@{Tick}}
+\index{Tick@{Tick}!AShooterCharacter@{AShooterCharacter}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void A\+Shooter\+Character\+::\+Tick (\begin{DoxyParamCaption}\item[{float}]{Delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 40 of file Shooter\+Character.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/\+Agile\+\_\+4\+Test/\mbox{\hyperlink{_shooter_character_8h}{Shooter\+Character.\+h}}\item 
+Source/\+Agile\+\_\+4\+Test/\mbox{\hyperlink{_shooter_character_8cpp}{Shooter\+Character.\+cpp}}\end{DoxyCompactItemize}
